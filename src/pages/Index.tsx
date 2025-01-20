@@ -1,6 +1,6 @@
 import { HeroSection } from "@/components/HeroSection";
 import { FeaturesSection } from "@/components/FeaturesSection";
-import { TestimonialsSection } from "@/components/TestimonialsSection";
+//import { TestimonialsSection } from "@/components/TestimonialsSection";
 import { PricingSection } from "@/components/PricingSection";
 import { FAQSection } from "@/components/FAQSection";
 import { ObjectivesSection } from "@/components/ObjectivesSection";
@@ -105,9 +105,8 @@ const Index = () => {
       <ObjectivesSection />
       {featuresContent && <FeaturesSection features={featuresContent} />}
       {aboutContent && <AboutSection content={aboutContent} />}
-      {testimonialsContent && <TestimonialsSection testimonials={testimonialsContent} />}
-      <PlataformSection />
       <VideoTestimonialsSection/>
+      <PlataformSection />
       <LearnSection/>
       <Guarantee/>
       {pricingContent && <PricingSection content={pricingContent} />}

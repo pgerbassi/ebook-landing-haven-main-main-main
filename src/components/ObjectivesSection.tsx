@@ -58,26 +58,6 @@ export const ObjectivesSection = () => {
             </Card>
           ))}
         </div>
-
-        <div className="mt-12 text-center">
-          <p className="text-lg font-medium text-yellow-400 mb-6">
-            Junte-se a milhares de estudantes de idiomas bem-sucedidos que alcançaram seus sonhos poliglotas
-          </p>
-          <div className="inline-flex items-center gap-8 text-gray-600">
-            <div>
-              <div className="text-3xl font-bold text-yellow-400 mb-1">10k+</div>
-              <div className="text-sm">Alunos Ativos</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-yellow-400 mb-1">95%</div>
-              <div className="text-sm">Taxa de Sucesso</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-yellow-400 mb-1">4.9/5</div>
-              <div className="text-sm">Avaliação dos Alunos</div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
