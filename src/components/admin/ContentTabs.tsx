@@ -17,6 +17,8 @@ const contentSections: ContentSection[] = [
     label: "Hero Section",
     fields: [
       { name: "title", type: "text", label: "Title" },
+      { name: "title_m", type: "text", label: "Title Mid" },
+      { name: "title_e", type: "text", label: "Title End" },
       { name: "subtitle", type: "text", label: "Subtitle" },
       { name: "button_text", type: "text", label: "Button Text" },
     ],
