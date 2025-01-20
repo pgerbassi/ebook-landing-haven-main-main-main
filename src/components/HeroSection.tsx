@@ -21,9 +21,17 @@ export const HeroSection = ({content}:  HeroSectionProps) => {
         <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-12 mt-6">
           <div className="relative lg:w-1/2 text-yellow-400 justify-items-center lg:justify-items-start">
           <div className="absolute inset-100 bg-cover bg-no-repeat bg-center bg-[url('/public/worldled.png')] opacity-50"></div>
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-slideUp drop-shadow-xl bg-gradient-to-r from-yellow-500 via-orange-500 to-yellow-400 inline-block text-transparent bg-clip-text text-center lg:text-start">
-              {content.title} {content.title_m} {content.title_e}
+            <h1 className="text-4xl md:text-6xl font-semibold text-white text-center lg:text-start">
+              {content.title + " "}
+              <h1 className="text-4xl md:text-6xl font-extrabold animate-slideUp drop-shadow-xl bg-gradient-to-r from-yellow-500 via-orange-500 to-yellow-400 inline-block text-transparent bg-clip-text text-center lg:text-start">
+              {content.title_m + " "}
+              <h1 className="text-4xl text-white md:text-6xl font-semibold animate-slideUp inline-block text-center lg:text-start mb-6">
+              {content.title_e}
             </h1>
+            </h1>
+            </h1>
+
+
             <p className="text-xl mb-8 text-orange-100 animate-slideUp [animation-delay:200ms]">
               {content.subtitle}
             </p>
