@@ -31,7 +31,7 @@ export const HeroSection = ({content}:  HeroSectionProps) => {
               </div>
             <Button 
               size="xg" 
-              className="text-2xl text-blue-800  hover:text-orange-700 transform transition-all duration-3000 bg-gradient-to-r from-gray-200 via-gray-400 to-gray-300 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400 mb-6"
+              className="text-2xl text-blue-800  hover:text-orange-700 transform transition-all duration-3000 bg-gradient-to-r from-yellow-200 via-yellow-400 to-yellow-300 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400 mb-6"
             >
               {content.button_text} <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
