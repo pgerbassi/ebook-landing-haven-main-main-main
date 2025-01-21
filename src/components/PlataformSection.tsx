@@ -20,7 +20,7 @@ export const PlataformSection = () => {
             </div>
           </div>
           <div className="relative lg:w-1/2 text-white">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-slideUp drop-shadow-xl text-center">
+          <h1 className="text-4xl md:text-6xl font-poppins font-bold mb-6 animate-slideUp drop-shadow-xl text-center">
               POR DENTRO <br></br> DA PLATAFORMA!
             </h1>
             <p className="text-xl mb-8 text-yellow-100 animate-slideUp [animation-delay:200ms]">
@@ -47,7 +47,7 @@ export const PlataformSection = () => {
             </p>
             <Button 
               size="xg" 
-              className="text-2xl bg-white text-blue-900  hover:scale-105 transform transition-all duration-1100 bg-gradient-to-r from-white via-yellow-200 to-white bg-[length:400%_100%] animate-shine mb-6"
+              className="text-2xl font-poppins font-bold bg-white text-blue-900  hover:scale-105 transform transition-all duration-1100 bg-gradient-to-r from-white via-yellow-200 to-white bg-[length:400%_100%] animate-shine mb-6"
             >
               Comece Agora <ArrowRight className="ml-2 h-5 w-5" />
             </Button>

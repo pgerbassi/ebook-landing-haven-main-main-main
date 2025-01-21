@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+const {fontFamily} = require("tailwindcss/defaultTheme");
 
 export default {
   darkMode: ["class"],
@@ -45,6 +46,9 @@ export default {
           foreground: "#222222",
         },
       },
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"]
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
@@ -81,5 +85,6 @@ export default {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"),
+           require("@tailwindcss/typography")],
 } satisfies Config;

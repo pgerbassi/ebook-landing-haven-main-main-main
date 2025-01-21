@@ -21,18 +21,19 @@ export const HeroSection = ({content}:  HeroSectionProps) => {
         <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-12 mt-6">
           <div className="relative lg:w-1/2 text-yellow-400 justify-items-center lg:justify-items-start">
           <div className="absolute inset-100 bg-cover bg-no-repeat bg-center bg-[url('/public/worldled.png')] opacity-50"></div>
-            <h1 className="text-4xl md:text-6xl font-semibold text-white text-center lg:text-start">
+            <h1 className="text-4xl md:text-6xl font-poppins text-white text-center lg:text-start">
               {content.title + " "}
-              <h1 className="text-4xl md:text-6xl font-extrabold animate-slideUp drop-shadow-xl bg-gradient-to-r from-yellow-500 via-orange-500 to-yellow-400 inline-block text-transparent bg-clip-text text-center lg:text-start">
+              <h1 className="text-4xl md:text-6xl font-bold animate-slideUp drop-shadow-xl bg-gradient-to-r from-yellow-500 via-orange-500 to-yellow-400 inline-block text-transparent bg-clip-text text-center lg:text-start">
               {content.title_m + " "}
-              <h1 className="text-4xl text-white md:text-6xl font-semibold animate-slideUp inline-block text-center lg:text-start mb-6">
+
+            </h1>
+            </h1>
+            <h1 className="text-4xl text-white font-poppins md:text-6xl animate-slideUp inline-block text-center lg:text-start mb-6">
               {content.title_e}
             </h1>
-            </h1>
-            </h1>
 
 
-            <p className="text-xl mb-8 text-orange-100 animate-slideUp [animation-delay:200ms]">
+            <p className="text-xl mb-8 font-poppins text-orange-100 animate-slideUp [animation-delay:200ms] text-center lg:text-start">
               {content.subtitle}
             </p>
             <div className="relative inline-flex group">
@@ -41,7 +42,7 @@ export const HeroSection = ({content}:  HeroSectionProps) => {
               </div>
             <Button 
               size="xg" 
-              className="text-2xl bg-white text-blue-900  hover:scale-105 transform transition-all duration-1100 bg-gradient-to-r from-white via-yellow-200 to-white bg-[length:400%_100%] animate-shine mb-6"
+              className="text-2xl font-bold font-poppins bg-white text-blue-900  hover:scale-105 transform transition-all duration-1100 bg-gradient-to-r from-white via-yellow-200 to-white bg-[length:400%_100%] animate-shine mb-6"
             >
               {content.button_text} <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
