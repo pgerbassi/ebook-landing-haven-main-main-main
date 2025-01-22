@@ -21,6 +21,7 @@ const contentSections: ContentSection[] = [
       { name: "title_e", type: "text", label: "Title End" },
       { name: "subtitle", type: "text", label: "Subtitle" },
       { name: "button_text", type: "text", label: "Button Text" },
+      { name: "background_image_url", type: "text", label: "Background Image URL" },
     ],
   },
   {

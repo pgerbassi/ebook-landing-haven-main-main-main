@@ -96,16 +96,44 @@ export type Database = {
         }
         Relationships: []
       }
+      global_settings: {
+        Row: {
+          created_at: string
+          font_family: string
+          font_url: string
+          id: string
+          updated_at: string
+        }
+        Insert: {
+          created_at?: string
+          font_family?: string
+          font_url?: string
+          id?: string
+          updated_at?: string
+        }
+        Update: {
+          created_at?: string
+          font_family?: string
+          font_url?: string
+          id?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
       hero_content: {
         Row: {
+          background_image_url: string
           button_text: string
           created_at: string
           id: string
           subtitle: string
           title: string
+          title_m: string
+          title_e: string
           updated_at: string
         }
         Insert: {
+          background_image_url?: string
           button_text: string
           created_at?: string
           id?: string
@@ -114,6 +142,7 @@ export type Database = {
           updated_at?: string
         }
         Update: {
+          background_image_url?: string
           button_text?: string
           created_at?: string
           id?: string

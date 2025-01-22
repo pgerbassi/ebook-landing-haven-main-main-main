@@ -1,5 +1,5 @@
+/* eslint-disable @typescript-eslint/no-require-imports */
 import type { Config } from "tailwindcss";
-const {fontFamily} = require("tailwindcss/defaultTheme");
 /* */
 export default {
   darkMode: ["class"],
@@ -19,6 +19,9 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        jersey: ["'Jersey 15'", 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -45,9 +48,6 @@ export default {
           DEFAULT: "#FEC6A1",
           foreground: "#222222",
         },
-      },
-      fontFamily: {
-        poppins: ["Poppins", "sans-serif"]
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -85,6 +85,5 @@ export default {
       },
     },
   },
-  plugins: [require("tailwindcss-animate"),
-           require("@tailwindcss/typography")],
+  plugins: [require("tailwindcss-animate")],
 } satisfies Config;

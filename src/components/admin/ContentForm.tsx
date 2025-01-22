@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useState } from "react";
 import { useToast } from "@/components/ui/use-toast";
 import { Button } from "@/components/ui/button";
@@ -8,7 +9,7 @@ import { Loader2 } from "lucide-react";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
 
-type TableNames = "about_content" | "faq_content" | "features_content" | "hero_content" | "pricing_content" | "testimonials_content";
+type TableNames = "about_content" | "faq_content" | "features_content" | "hero_content" | "pricing_content" | "testimonials_content" | "global_settings";
 
 interface ContentFormProps {
   section: TableNames;
@@ -27,8 +28,8 @@ export const ContentForm = ({ section, fields }: ContentFormProps) => {
   const { data, isLoading } = useQuery({
     queryKey: [section],
     queryFn: async () => {
-      // For testimonials, faq, and features, we want to get all rows
-      if (section === "testimonials_content" || section === "faq_content" || section === "features_content") {
+      // For testimonials, faq, features, and global settings we want to get all rows
+      if (section === "testimonials_content" || section === "faq_content" || section === "features_content" || section === "global_settings") {
         const { data, error } = await supabase
           .from(section)
           .select("*")
@@ -57,8 +58,8 @@ export const ContentForm = ({ section, fields }: ContentFormProps) => {
 
   const { mutate, isPending } = useMutation({
     mutationFn: async (newData: typeof formData) => {
-      if (section === "testimonials_content" || section === "faq_content" || section === "features_content") {
-        // For testimonials, faq, and features, we update the specific record
+      if (section === "testimonials_content" || section === "faq_content" || section === "features_content" || section === "global_settings") {
+        // For testimonials, faq, features, and global settings we update the specific record
         const { error } = await supabase
           .from(section)
           .update(newData)
