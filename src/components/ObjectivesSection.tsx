@@ -30,10 +30,10 @@ export const ObjectivesSection = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-blue-900">
-            A formação Hiperpoliglota é para você que quer…
+            A Formação Hiperpoliglota é para você que quer…
           </h2>
           <p className="text-lg text-gray-600">
-          Desbloquer todo seu potencial e alcançar seus objetivos de aprendizado de idiomas com nosso método Dual Flow
+          Desbloquear todo seu potencial e alcançar seus objetivos de aprendizado de idiomas com nosso método Dual Flow
           </p>
         </div>
         
