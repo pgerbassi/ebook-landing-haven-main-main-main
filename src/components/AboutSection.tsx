@@ -52,18 +52,19 @@ export const AboutSection = ({ content }: AboutSectionProps) => {
                 <Card className="bg-yellow-400/5">
                   <CardContent className="p-4 flex items-center gap-3">
                     <Award className="h-6 w-6 text-yellow-400" />
-                    <div className="text-sm font-medium">{content.stats.method}</div>
+                    <div className="text-sm font-medium">{content.stats.recognition}</div>
                   </CardContent>
                 </Card>
               </div>
             </div>
             <div className="relative">
               <div className="aspect-square rounded-2xl bg-gradient-to-br from-blue-400/20 to-yellow-400/10 flex items-center justify-center">
-                <div className="text-center p-8">
-                  <p className="text-xl font-medium text-gray-900 mb-4">
-                    {content.quote}
-                  </p>
-                  <p className="text-yellow-400 font-semibold">- Victor</p>
+              <div className="aspect-square rounded-2xl overflow-hidden">
+                <img 
+                  src="/vitorPoliglota.jpeg" 
+                  alt="Our Team"
+                  className="w-full h-full object-cover"
+                />
                 </div>
               </div>
             </div>

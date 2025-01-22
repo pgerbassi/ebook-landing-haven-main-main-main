@@ -23,7 +23,7 @@ export const PricingSection = ({content}: PricingSectionProps) => {
         <div className="max-w-lg mx-auto">
           <Card className="border-2 border-blue-200 animate-slideUp hover:shadow-2xl transition-shadow duration-300">
             <CardHeader className="text-center bg-gradient-to-r from-blue-700  to-blue-100 bg-[length:400%_200%] text-white py-8">
-              <h3 className="text-2xl font-bold">Sistema Completo de Aprendizado de Idiomas</h3>
+              <h3 className="text-2xl font-bold">Formação Hiperpoliglota</h3>
               <p className="text-3xl font-bold mt-4">{content.price}</p>
             </CardHeader>
             <CardContent className="p-6">

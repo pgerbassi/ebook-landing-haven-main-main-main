@@ -4,17 +4,17 @@ import { Card, CardContent } from "./ui/card";
 const objectives = [
   {
     icon: Globe,
-    title: "Domine Múltiplos Idiomas",
+    title: "Dominar Múltiplos Idiomas",
     description: "Quebre barreiras linguísticas e comunique-se com confiança em vários idiomas, abrindo portas para novas culturas e oportunidades.",
   },
   {
     icon: Brain,
-    title: "Aprendizado Acelerado",
+    title: "Aprender de forma Acelerada",
     description: "Aprenda idiomas até 3x mais rápido com nossa metodologia poliglota comprovada e técnicas de aprimoramento cognitivo.",
   },
   {
     icon: Target,
-    title: "Crescimento Profissional",
+    title: "Crescer Profissionalmente",
     description: "Aumente seu valor profissional e acesse mercados de trabalho internacionais com proficiência em múltiplos idiomas.",
   },
   {
@@ -30,10 +30,10 @@ export const ObjectivesSection = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-blue-900">
-            Transforme Sua Vida como Poliglota
+            A formação Hiperpoliglota é para você que quer…
           </h2>
           <p className="text-lg text-gray-600">
-            Desbloqueie todo seu potencial e alcance seus objetivos de aprendizado de idiomas com nosso sistema completo
+          Desbloquer todo seu potencial e alcançar seus objetivos de aprendizado de idiomas com nosso método Dual Flow
           </p>
         </div>
         

@@ -1,21 +1,30 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Award, BadgePlus, Brain, GraduationCap, Languages } from "lucide-react";
 import { Card, CardContent } from "./ui/card";
+import { useIsMobile } from "@/hooks/use-mobile";
+
 
 export const PlataformSection = () => {
+  const isMobile = useIsMobile();
+  // Convert YouTube URL to embed URL
+  const videoId = "H-t7IdF7r08";
+  const embedUrl = `https://www.youtube.com/embed/${videoId}`;
+
   return (
     <div className="relative min-h-[80vh] flex items-center">
       <div className="absolute inset-0 bg-gradient-to-r from-blue-800 to-black opacity-100" />
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
-        <div className="absolute inset-0 bg-cover bg-no-repeat bg-center bg-[url('/public/worldpoint.png')] opacity-30"></div>
+        <div className="absolute inset-0 bg-cover bg-no-repeat bg-center bg-[url('/worldpoint.png')] opacity-30"></div>
 
-          <div className= "lg:w-1/2">
-            <div className="relative animate-float mt-6">
-              <img
-                src="/placeholder.svg"
-                alt="Prévia do Ebook"
-                className="rounded-lg shadow-2xl"
+        <div className={`${isMobile ? 'w-screen -mx-4 mt-8' : 'lg:w-1/2'}`}>
+            <div className="relative w-full aspect-video rounded-lg overflow-hidden shadow-2xl animate-float">
+              <iframe
+                src={embedUrl}
+                title="CURSO HIPERPOLIGLOTA"
+                className="relative inset-0 w-full h-full"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
               />
             </div>
           </div>
@@ -28,19 +37,19 @@ export const PlataformSection = () => {
                 <Card className="bg-blue-400/5">
                   <CardContent className="p-4 flex items-center gap-3">
                     <BadgePlus className="h-6 w-6 text-yellow-400" />
-                    <div className="text-xl font-medium">Em 3 meses <p className=" text-sm mb-2 text-yellow-100 animate-slideUp [animation-delay:200ms]">Atingir um nível conversacional satisfatório</p></div>
+                    <div className="text-xl font-medium">3 meses <p className=" text-sm mb-2 text-yellow-100 animate-slideUp [animation-delay:200ms]">Atingir o nível conversacional </p></div>
                   </CardContent>
                 </Card>
                 <Card className="bg-blue-400/10">
                   <CardContent className="p-4 flex items-center gap-3">
                     <BadgePlus className="h-6 w-6 text-yellow-400" />
-                    <div className="text-xl font-medium">Em 6 meses <p className=" text-sm mb-2 text-yellow-100 animate-slideUp [animation-delay:200ms]">Atingir um nível avançado no idioma</p></div>
+                    <div className="text-xl font-medium">6 meses <p className=" text-sm mb-2 text-yellow-100 animate-slideUp [animation-delay:200ms]">Atingir o nível avançado</p></div>
                   </CardContent>
                 </Card>
                 <Card className="bg-blue-400/20">
                   <CardContent className="p-4 flex items-center gap-3">
                     <BadgePlus className="h-6 w-6 text-yellow-400" />
-                    <div className="text-xl font-medium">Em 1 ano <p className=" text-sm mb-2 text-yellow-100 animate-slideUp [animation-delay:200ms]">Fluência Absoluta</p></div>
+                    <div className="text-xl font-medium">1 ano <p className=" text-sm mb-2 text-yellow-100 animate-slideUp [animation-delay:200ms]">Fluência Absoluta</p></div>
                   </CardContent>
                 </Card>
               </div>

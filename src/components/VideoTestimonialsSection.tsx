@@ -2,24 +2,24 @@
 const videoTestimonials = [
   {
     id: "video1",
-    title: "De iniciante a fluente em 3 meses",
-    author: "Carlos Silva",
-    occupation: "Empresário",
-    embedId: "your-video-id-1"
+    title: "Fluencia em 2 meses em russo",
+    author: "João",
+    occupation: "Aluno",
+    embedId: "j7Qz9frfXPw"
   },
   {
     id: "video2",
-    title: "Aprovada em 4 testes internacionais",
-    author: "Marina Santos",
-    occupation: "Estudante",
-    embedId: "your-video-id-2"
+    title: "Desafio de ser tornar hiperpoliglota em 1 ano",
+    author: "Felipe",
+    occupation: "Aluno",
+    embedId: "0E5MqKoD0dA"
   },
   {
     id: "video3",
-    title: "Viajando pelo mundo com 7 idiomas",
-    author: "Pedro Costa",
-    occupation: "Fotógrafo",
-    embedId: "your-video-id-3"
+    title: "Conquistou o certificado de proficiência em alemão em 1 mês",
+    author: "Daniele",
+    occupation: "Aluna",
+    embedId: "1tjNbqwuAIc"
   }
 ];
 
