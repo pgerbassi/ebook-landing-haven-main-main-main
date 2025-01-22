@@ -2,7 +2,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ContentForm } from "./ContentForm";
 
 type ContentSection = {
-  id: "hero_content" | "about_content" | "features_content" | "pricing_content" | "testimonials_content" | "faq_content";
+  id: "hero_content" | "about_content" | "features_content" | "pricing_content" | "testimonials_content" | "faq_content" | "global_settings";
   label: string;
   fields: {
     name: string;
@@ -71,6 +71,14 @@ const contentSections: ContentSection[] = [
       { name: "question", type: "text", label: "Question" },
       { name: "answer", type: "textarea", label: "Answer" },
       { name: "display_order", type: "text", label: "Display Order" },
+    ],
+  },
+  {
+    id: "global_settings",
+    label: "Global",
+    fields: [
+      { name: "font_family", type: "text", label: "Font Family" },
+      { name: "font_url", type: "text", label: "Font URL" },
     ],
   },
 ];
