@@ -2,6 +2,8 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Award, BadgePlus, Brain, GraduationCap, Languages } from "lucide-react";
 import { Card, CardContent } from "./ui/card";
 import { useIsMobile } from "@/hooks/use-mobile";
+const paymentLink = "https://pay.hotmart.com/D96966130K?bid=1735330800536";
+
 
 
 export const PlataformSection = () => {
@@ -54,12 +56,16 @@ export const PlataformSection = () => {
                 </Card>
               </div>
             </p>
+            <a href= {paymentLink}
+                target="_blank"
+                  rel="noopener noreferrer">
             <Button 
               size="xg" 
               className="text-2xl font-poppins font-bold bg-white text-blue-900  hover:scale-105 transform transition-all duration-1100 bg-gradient-to-r from-white via-yellow-200 to-white bg-[length:400%_100%] animate-shine mb-6"
             >
               Comece Agora <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
+            </a>
             </div>
         </div>
       </div>

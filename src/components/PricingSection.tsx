@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Check } from "lucide-react";
+const paymentLink = "https://pay.hotmart.com/D96966130K?bid=1735330800536";
+
 
 interface PricingContent {
   title: string;
@@ -35,12 +37,16 @@ export const PricingSection = ({content}: PricingSectionProps) => {
                   </li>
                 ))}
               </ul>
+              <a href= {paymentLink}
+                target="_blank"
+                  rel="noopener noreferrer">
               <Button 
                 className="w-full text-lg py-6 bg-blue-500 transform hover:scale-105 hover:animate-none transition-all duration-1000 bg-gradient-to-r from-blue-500 via-blue-400 to-blue-500 bg-[length:400%_100%] animate-bounce" 
                 size="lg"
               >
                 {content.button_text}
               </Button>
+              </a>
             </CardContent>
           </Card>
         </div>

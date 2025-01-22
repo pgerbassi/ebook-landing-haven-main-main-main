@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
+const paymentLink = "https://pay.hotmart.com/D96966130K?bid=1735330800536";
 
 interface HeroContent {
   title: string;
@@ -55,12 +56,16 @@ export const HeroSection = ({content}:  HeroSectionProps) => {
               <div className="
               absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#fff23e] via-[#ff9100] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt mb-6">
               </div>
+            <a href= {paymentLink}
+                target="_blank"
+                  rel="noopener noreferrer">
             <Button 
               size="xg" 
               className="text-2xl font-bold font-poppins bg-white text-blue-900  hover:scale-105 transform transition-all duration-1100 bg-gradient-to-r from-white via-yellow-200 to-white bg-[length:400%_100%] animate-shine mb-6"
             >
               {content.button_text} <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
+            </a>
             </div>
             </div>
           <div className={`${isMobile ? 'w-screen -mx-4' : 'lg:w-1/2'}`}>
