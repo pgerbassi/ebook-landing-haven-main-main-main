@@ -19,8 +19,8 @@ interface HeroSectionProps {
 export const HeroSection = ({content}:  HeroSectionProps) => {
     const isMobile = useIsMobile();
     // Convert YouTube URL to embed URL
-    const videoId = "YsC4J0c9PmA";
-    const embedUrl = `https://www.youtube.com/embed/${videoId}`;
+    //const videoId = "YsC4J0c9PmA";
+    const embedUrl = `https://www.youtube.com/embed/YsC4J0c9PmA`;
 
   return (
     <div className="relative min-h-[100vh] flex items-center bg-cover opacity-100 inset-0 bg-center bg-no-repeat bg-[url('/worlddraft.png')]">
@@ -72,7 +72,7 @@ export const HeroSection = ({content}:  HeroSectionProps) => {
             <div className="relative w-full aspect-video rounded-lg overflow-hidden shadow-2xl animate-float">
               <iframe
                 src={embedUrl}
-                title="CURSO HIPERPOLIGLOTA"
+                title=""
                 className="relative inset-0 w-full h-full"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen

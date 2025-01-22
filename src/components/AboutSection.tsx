@@ -34,25 +34,25 @@ export const AboutSection = ({ content }: AboutSectionProps) => {
                 <Card className="bg-yellow-400/5">
                   <CardContent className="p-4 flex items-center gap-3">
                     <Languages className="h-6 w-6 text-yellow-400" />
-                    <div className="text-sm font-medium">{content.stats.languages}</div>
+                    <div className="text-base font-medium">{content.stats.languages}</div>
                   </CardContent>
                 </Card>
                 <Card className="bg-yellow-400/5">
                   <CardContent className="p-4 flex items-center gap-3">
                     <GraduationCap className="h-6 w-6 text-yellow-400" />
-                    <div className="text-sm font-medium">{content.stats.students}</div>
+                    <div className="text-base font-medium">{content.stats.students}</div>
                   </CardContent>
                 </Card>
                 <Card className="bg-yellow-400/5">
                   <CardContent className="p-4 flex items-center gap-3">
                     <Brain className="h-6 w-6 text-yellow-400" />
-                    <div className="text-sm font-medium">{content.stats.method}</div>
+                    <div className="text-base font-medium">{content.stats.method}</div>
                   </CardContent>
                 </Card>
                 <Card className="bg-yellow-400/5">
                   <CardContent className="p-4 flex items-center gap-3">
                     <Award className="h-6 w-6 text-yellow-400" />
-                    <div className="text-sm font-medium">{content.stats.recognition}</div>
+                    <div className="text-base font-medium">{content.stats.recognition}</div>
                   </CardContent>
                 </Card>
               </div>

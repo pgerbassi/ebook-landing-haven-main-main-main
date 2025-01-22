@@ -23,7 +23,7 @@ export const PlataformSection = () => {
             <div className="relative w-full aspect-video rounded-lg overflow-hidden shadow-2xl animate-float">
               <iframe
                 src={embedUrl}
-                title="CURSO HIPERPOLIGLOTA"
+                title=""
                 className="relative inset-0 w-full h-full"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
