@@ -10,7 +10,7 @@ export const PlataformSection = () => {
   const isMobile = useIsMobile();
   // Convert YouTube URL to embed URL
   const videoId = "H-t7IdF7r08";
-  const embedUrl = `https://www.youtube.com/embed/${videoId}`;
+  const embedUrl = `https://www.youtube.com/embed/H-t7IdF7r08`;
 
   return (
     <div className="relative min-h-[80vh] flex items-center">

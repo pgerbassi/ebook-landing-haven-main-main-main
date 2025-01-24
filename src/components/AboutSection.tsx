@@ -63,7 +63,7 @@ export const AboutSection = ({ content }: AboutSectionProps) => {
                 <img 
                   src="/vitorPoliglota.jpeg" 
                   alt="Our Team"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-[25%_64%]"
                 />
                 </div>
               </div>
